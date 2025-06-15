@@ -1,0 +1,280 @@
+/* Software Engineering Header Styles */
+.software-header {
+    background: linear-gradient(135deg, #1565c0 0%, #1e88e5 100%);
+    color: white;
+    padding: 2.5rem 0;  /* Reduced from 4rem */
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.software-header h1 {
+    font-size: 2rem;  /* Reduced from 2.4rem */
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+.software-header .lead {
+    font-size: 1rem;  /* Reduced from 1.1rem */
+    opacity: 0.95;
+    max-width: 800px;
+    margin-bottom: 1.5rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+.stat-item .number {
+    font-size: 1.75rem;  /* Reduced from 2rem */
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.stat-item .label {
+    font-size: 0.95rem;  /* Reduced from 1rem */
+    opacity: 0.95;
+    font-weight: 500;
+}
+
+.stat-number {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+    color: #1565c0;
+}
+
+.stat-label {
+    font-size: 0.85rem;
+    opacity: 0.85;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #546e7a;
+}
+
+@media (max-width: 768px) {
+    .software-header {
+        padding: 2rem 0;  /* Reduced from 3rem */
+    }
+    
+    .software-header h1 {
+        font-size: 1.8rem;  /* Reduced from 2rem */
+    }
+    
+    .software-header .lead {
+        font-size: 0.95rem;  /* Reduced from 1rem */
+    }
+    
+    .software-section h2 {
+        font-size: 1.6rem;  /* Reduced from 1.8rem */
+    }
+    
+    .stat-number {
+        font-size: 1.3rem;  /* Reduced from 1.5rem */
+    }
+    
+    .stat-label {
+        font-size: 0.75rem;  /* Reduced from 0.85rem */
+    }
+}
+
+/* Section Styles */
+.software-section {
+    position: relative;
+    margin-bottom: 1.5rem;
+    padding: 3rem 0;
+    overflow: hidden;
+}
+
+.software-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #1a237e, #0d47a1);
+    opacity: 0.1;
+}
+
+.software-section.bg-light {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e8edf5 100%);
+}
+
+.software-section.bg-light::before {
+    opacity: 0.2;
+}
+
+.software-section h2 {
+    font-size: 1.8rem;  /* Reduced from 2.2rem */
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #1565c0;
+    position: relative;
+    display: inline-block;
+}
+
+.software-section h2::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, #1565c0, #1e88e5);
+}
+
+.software-section .lead {
+    font-size: 1.2rem;
+    line-height: 1.7;
+    color: #445;
+    margin-bottom: 2rem;
+}
+
+/* Card Styles */
+.software-card {
+    background: white;
+    border-radius: 12px;
+    border: none;
+    transition: all 0.3s ease;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.software-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #1a237e, #0d47a1);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.software-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+
+.software-card:hover::before {
+    opacity: 1;
+}
+
+.software-card .card-body {
+    padding: 1.75rem;
+}
+
+.software-card .card-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #1a237e;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.software-card .card-title i {
+    font-size: 1.1em;
+    margin-right: 0.75rem;
+    color: #0d47a1;
+    opacity: 0.9;
+}
+
+.software-card .card-text {
+    color: #445;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+/* List Styles */
+.software-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.software-list li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    display: flex;
+    align-items: center;
+}
+
+.software-list li:last-child {
+    border-bottom: none;
+}
+
+.software-list li i {
+    color: #43a047;
+    margin-right: 1rem;
+    font-size: 1.1rem;
+}
+
+/* Table Styles */
+.software-table {
+    width: 100%;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.software-table thead {
+    background: linear-gradient(90deg, #1a237e, #0d47a1);
+    color: white;
+}
+
+.software-table th {
+    padding: 1rem;
+    font-weight: 600;
+}
+
+.software-table td {
+    padding: 1rem;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.software-table tr:last-child td {
+    border-bottom: none;
+}
+
+/* Button Styles */
+.btn-software {
+    padding: 0.75rem 1.5rem;
+    font-weight: 500;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    background: linear-gradient(135deg, #1565c0 0%, #1e88e5 100%);
+    color: white;
+    border: none;
+}
+
+.btn-software:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    background: linear-gradient(135deg, #0d47a1 0%, #1565c0 100%);
+    color: white;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .software-section {
+        padding: 2.5rem 0;
+        margin-bottom: 1rem;
+    }
+    
+    .software-section h2 {
+        font-size: 1.6rem;  /* Reduced from 1.8rem */
+    }
+    
+    .software-section .lead {
+        font-size: 1.1rem;
+    }
+    
+    .software-card .card-body {
+        padding: 1.5rem;
+    }
+} 

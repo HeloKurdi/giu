@@ -1,0 +1,698 @@
+/* General Styles */
+:root {
+    --primary-color: #1a237e;
+    --secondary-color: #0d47a1;
+    --accent-color: #2962ff;
+}
+
+html {
+    font-size: 14px;
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Top Bar Styles */
+.top-bar {
+    font-size: 0.9rem;
+}
+
+.top-bar a:hover {
+    opacity: 0.8;
+}
+
+/* Navigation Styles */
+.navbar {
+    padding: 1rem 0;
+}
+
+.navbar-brand img {
+    max-height: 60px;
+}
+
+.nav-link {
+    font-weight: 500;
+    padding: 0.5rem 1rem !important;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--accent-color) !important;
+}
+
+.dropdown-menu {
+    border: none;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-item:hover {
+    background-color: #f8f9fa;
+    color: var(--accent-color);
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(120deg, #e53935 0%, #fbc02d 40%, #43a047 70%, #283593 100%);
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+/* Button Styles */
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    padding: 0.5rem 1.5rem;
+    font-weight: 500;
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+/* Card Styles */
+.card {
+    border: none;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Footer Styles */
+footer {
+    background-color: var(--primary-color);
+}
+
+footer h5 {
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+footer a {
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+footer a:hover {
+    opacity: 0.8;
+}
+
+/* Colleges Section Styles */
+.card .fa-3x {
+    transition: transform 0.3s ease;
+}
+
+.card:hover .fa-3x {
+    transform: scale(1.1);
+}
+
+.card .card-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    min-height: 2.8rem;
+}
+
+.card .card-text {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 1rem;
+    min-height: 3rem;
+}
+
+.card .btn-outline-primary {
+    border-width: 2px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.card .btn-outline-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Campus Life Section Styles */
+.campus-life-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    background: white;
+}
+
+.campus-life-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.campus-life-card .card-body {
+    padding: 2rem;
+}
+
+.campus-life-card .fa-3x {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.campus-life-card:hover .fa-3x {
+    transform: scale(1.1);
+}
+
+.campus-life-card .card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.campus-life-card .card-text {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.campus-life-card .btn-outline-primary {
+    border-width: 2px;
+    font-weight: 500;
+    padding: 0.5rem 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.campus-life-card .btn-outline-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 60px 0;
+    }
+
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+
+    .navbar-brand img {
+        max-height: 40px;
+    }
+}
+
+/* Custom Animations */
+.fade-in {
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+/* Features Section */
+section.py-5:not(.galiawa-section):not(.bg-light):not(.campus-life-section) {
+    background: #fff;
+    color: #283593;
+}
+
+/* Colleges Section */
+section.py-5.colleges-section {
+    background: #e3f0fb;
+    color: #1a237e;
+}
+
+/* Campus Life Section */
+section.py-5.campus-life-section, section.py-5.bg-light.campus-life-section {
+    background: #e6f5ea !important;
+    color: #1a593e;
+}
+
+.colleges-section .card {
+    box-shadow: 0 6px 24px rgba(40, 53, 147, 0.18), 0 1.5px 4px rgba(0,0,0,0.08);
+    border-radius: 1rem;
+    border: none;
+}
+
+.campus-life-section .card {
+    box-shadow: 0 6px 24px rgba(60, 60, 60, 0.15), 0 1.5px 4px rgba(0,0,0,0.08);
+    border-radius: 1rem;
+    border: none;
+}
+
+.colleges-section h2, .colleges-section .card-title {
+    color: #1a237e;
+}
+
+.campus-life-section h2, .campus-life-section .card-title {
+    color: #1a593e;
+}
+
+/* Galiawa Section Styles */
+.galiawa-section {
+    background: linear-gradient(90deg, #e53935 0%, #fbc02d 25%, #43a047 60%, #283593 100%);
+    color: #fff;
+    border-radius: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 24px rgba(40, 53, 147, 0.08);
+}
+
+.galiawa-section .lead {
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.8;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.3px;
+}
+.galiawa-logo {
+    background: #fff;
+    border-radius: 1rem;
+    padding: 1rem;
+    box-shadow: 0 2px 12px rgba(40, 53, 147, 0.10);
+}
+.galiawa-title {
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 1px;
+}
+.galiawa-features li {
+    font-size: 1.1rem;
+    margin-bottom: 0.7rem;
+    display: flex;
+    align-items: center;
+}
+.galiawa-dot {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    margin-right: 0.7rem;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.10);
+}
+.galiawa-red { background: #e53935; }
+.galiawa-yellow { background: #fbc02d; }
+.galiawa-green { background: #43a047; }
+.galiawa-blue { background: #283593; }
+.galiawa-section .lead {
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.8;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.3px;
+}
+
+@media (max-width: 768px) {
+    .galiawa-section {
+        border-radius: 0.5rem;
+        padding: 1.5rem 0.5rem;
+    }
+    .galiawa-logo {
+        max-width: 120px;
+        padding: 0.5rem;
+    }
+    .hero-section {
+        padding: 60px 0;
+    }
+}
+
+/* Remove College of Engineering image background */
+.college-engineering-bg {
+    background: #1976d2 !important; /* Blue for Engineering */
+    color: #fff;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+.college-engineering-bg .card-title,
+.college-engineering-bg .card-text,
+.college-engineering-bg .btn,
+.college-engineering-bg .fa-3x {
+    color: #fff !important;
+}
+.college-engineering-bg .btn-outline-primary {
+    border-color: #fff;
+}
+.college-engineering-bg .btn-outline-primary:hover {
+    background: #fff;
+    color: #1976d2;
+}
+
+/* Unique colors for other colleges */
+.college-applied-bg { background: #43a047 !important; color: #fff; }
+.college-dentistry-bg { background: #fbc02d !important; color: #1a237e; }
+.college-pharmacy-bg { background: #8e24aa !important; color: #fff; }
+.college-nursing-bg { background: #00bcd4 !important; color: #fff; }
+.college-healthsci-bg { background: #c62828 !important; color: #fff; }
+.college-healthtech-bg { background: #ff7043 !important; color: #fff; }
+.college-admin-bg { background: #6d4c41 !important; color: #fff; }
+.college-law-bg { background: #3949ab !important; color: #fff; }
+.college-arts-bg { background: #fbc02d !important; color: #1a237e; }
+.college-languages-bg { background: #388e3c !important; color: #fff; }
+.college-physical-bg { background: #0288d1 !important; color: #fff; }
+
+/* College Card Text Readability */
+.college-engineering-bg .card-title,
+.college-engineering-bg .card-text,
+.college-engineering-bg .btn,
+.college-engineering-bg .fa-3x {
+    color: #fff !important;
+}
+
+.college-applied-bg .card-title,
+.college-applied-bg .card-text,
+.college-applied-bg .btn,
+.college-applied-bg .fa-3x {
+    color: #fff !important;
+}
+
+.college-dentistry-bg .card-title,
+.college-dentistry-bg .card-text,
+.college-dentistry-bg .btn,
+.college-dentistry-bg .fa-3x {
+    color: #1a237e !important;
+}
+
+.college-pharmacy-bg .card-title,
+.college-pharmacy-bg .card-text,
+.college-pharmacy-bg .btn,
+.college-pharmacy-bg .fa-3x {
+    color: #fff !important;
+}
+
+.college-nursing-bg .card-title,
+.college-nursing-bg .card-text,
+.college-nursing-bg .btn,
+.college-nursing-bg .fa-3x {
+    color: #fff !important;
+}
+
+.college-healthsci-bg .card-title,
+.college-healthsci-bg .card-text,
+.college-healthsci-bg .btn,
+.college-healthsci-bg .fa-3x {
+    color: #fff !important;
+}
+
+.college-healthtech-bg .card-title,
+.college-healthtech-bg .card-text,
+.college-healthtech-bg .btn,
+.college-healthtech-bg .fa-3x {
+    color: #fff !important;
+}
+
+.college-admin-bg .card-title,
+.college-admin-bg .card-text,
+.college-admin-bg .btn,
+.college-admin-bg .fa-3x {
+    color: #fff !important;
+}
+
+.college-law-bg .card-title,
+.college-law-bg .card-text,
+.college-law-bg .btn,
+.college-law-bg .fa-3x {
+    color: #fff !important;
+}
+
+.college-arts-bg .card-title,
+.college-arts-bg .card-text,
+.college-arts-bg .btn,
+.college-arts-bg .fa-3x {
+    color: #1a237e !important;
+}
+
+.college-languages-bg .card-title,
+.college-languages-bg .card-text,
+.college-languages-bg .btn,
+.college-languages-bg .fa-3x {
+    color: #fff !important;
+}
+
+.college-physical-bg .card-title,
+.college-physical-bg .card-text,
+.college-physical-bg .btn,
+.college-physical-bg .fa-3x {
+    color: #fff !important;
+}
+
+/* Button contrast for yellow backgrounds */
+.college-dentistry-bg .btn-outline-primary,
+.college-arts-bg .btn-outline-primary {
+    border-color: #1a237e;
+    color: #1a237e !important;
+    background: #fff;
+}
+.college-dentistry-bg .btn-outline-primary:hover,
+.college-arts-bg .btn-outline-primary:hover {
+    background: #1a237e;
+    color: #fff !important;
+}
+
+.slide-img-shadow {
+    box-shadow: 0 8px 32px rgba(40, 53, 147, 0.18), 0 2px 8px rgba(0,0,0,0.10) inset;
+    border-radius: 1rem;
+}
+
+/* Software Engineering Header Styles */
+.software-header {
+    background: linear-gradient(135deg, #1a237e 0%, #0d47a1 100%);
+    color: white;
+    padding: 5rem 0;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 3rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.software-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+        linear-gradient(30deg, #0d47a1 12%, transparent 12.5%, transparent 87%, #0d47a1 87.5%, #0d47a1),
+        linear-gradient(150deg, #0d47a1 12%, transparent 12.5%, transparent 87%, #0d47a1 87.5%, #0d47a1),
+        linear-gradient(30deg, #0d47a1 12%, transparent 12.5%, transparent 87%, #0d47a1 87.5%, #0d47a1),
+        linear-gradient(150deg, #0d47a1 12%, transparent 12.5%, transparent 87%, #0d47a1 87.5%, #0d47a1),
+        linear-gradient(60deg, #0d47a177 25%, transparent 25.5%, transparent 75%, #0d47a177 75%, #0d47a177);
+    background-size: 80px 140px;
+    background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0;
+    opacity: 0.1;
+}
+
+.software-header .container {
+    position: relative;
+    z-index: 1;
+}
+
+.software-header h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    text-shadow: 3px 3px 6px rgba(0,0,0,0.3);
+    letter-spacing: -0.5px;
+}
+
+.software-header .lead {
+    font-size: 1.5rem;
+    max-width: 800px;
+    margin-bottom: 2rem;
+    opacity: 0.95;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    line-height: 1.6;
+}
+
+.software-stats {
+    display: flex;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.stat-item {
+    background: rgba(255,255,255,0.15);
+    padding: 1.5rem;
+    border-radius: 12px;
+    backdrop-filter: blur(8px);
+    text-align: center;
+    min-width: 140px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.stat-item .number {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.stat-item .label {
+    font-size: 1rem;
+    opacity: 0.95;
+    font-weight: 500;
+}
+
+/* Section Styles */
+section {
+    position: relative;
+    margin-bottom: 3rem;
+    padding: 4rem 0;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+section h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    color: #1a237e;
+}
+
+section.bg-light {
+    background: linear-gradient(135deg, #f5f7fa 0%, #e8edf5 100%);
+}
+
+section .lead {
+    font-size: 1.25rem;
+    line-height: 1.8;
+    color: #445;
+}
+
+.card {
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    border-radius: 15px;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+}
+
+.card .card-body {
+    padding: 2rem;
+}
+
+.card .card-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #1a237e;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+    .software-header {
+        padding: 3rem 0;
+    }
+    
+    .software-header h1 {
+        font-size: 2.5rem;
+    }
+    
+    .software-header .lead {
+        font-size: 1.2rem;
+    }
+    
+    .software-stats {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .stat-item {
+        width: 100%;
+    }
+    
+    section {
+        padding: 3rem 0;
+        margin-bottom: 2rem;
+    }
+    
+    section h2 {
+        font-size: 2rem;
+    }
+}
+
+/* Department Pages Styles */
+.program-hero {
+    margin-bottom: 2rem;
+}
+
+.program-hero-image {
+    position: relative;
+}
+
+.program-highlights {
+    background: rgba(0,0,0,0.2);
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.highlight-item {
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    background: rgba(255,255,255,0.1);
+    border-radius: 0.25rem;
+}
+
+.department-card {
+    transition: transform 0.3s ease;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.department-card:hover {
+    transform: translateY(-5px);
+}
+
+@media (max-width: 768px) {
+    .program-hero-image {
+        height: 300px !important;
+    }
+    
+    .program-highlights {
+        flex-direction: column;
+    }
+    
+    .highlight-item {
+        width: 100%;
+        text-align: center;
+    }
+}
