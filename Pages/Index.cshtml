@@ -1,0 +1,389 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home";
+}
+
+<!-- Hero Section (Carousel) -->
+<section class="hero-section p-0">
+    <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="container-fluid">
+                    <div class="row align-items-center flex-column flex-md-row" style="min-height: 480px; background: linear-gradient(120deg, #e53935 0%, #fbc02d 100%);">
+                        <div class="col-md-5 text-center p-0">
+                            <img src="/images/slide1.jpg" alt="Welcome Slide" class="img-fluid slide-img-shadow" style="max-height:420px; object-fit:cover; margin: 1.5rem auto;" />
+                        </div>
+                        <div class="col-md-7 d-flex flex-column align-items-center justify-content-center text-white py-4">
+                            <h1 class="fade-in">Welcome to Galiawa International University</h1>
+                            <p class="fade-in">Empowering minds, shaping futures, and building a better tomorrow through excellence in education and research.</p>
+                            <div class="d-flex justify-content-center gap-3">
+                                <a href="#" class="btn btn-primary btn-lg fade-in">Apply Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="container-fluid">
+                    <div class="row align-items-center flex-column flex-md-row" style="min-height: 480px; background: linear-gradient(120deg, #43a047 0%, #283593 100%);">
+                        <div class="col-md-5 text-center p-0">
+                            <img src="/images/slide2.jpg" alt="Research Slide" class="img-fluid slide-img-shadow" style="max-height:420px; object-fit:cover; margin: 1.5rem auto;" />
+                        </div>
+                        <div class="col-md-7 d-flex flex-column align-items-center justify-content-center text-white py-4">
+                            <h1 class="fade-in">Innovative Research & Technology</h1>
+                            <p class="fade-in">Join our vibrant research community and explore the latest in science, technology, and innovation.</p>
+                            <div class="d-flex justify-content-center gap-3">
+                                <a href="#" class="btn btn-light btn-lg fade-in">Explore Research</a>
+                                <a href="#" class="btn btn-primary btn-lg fade-in">Apply Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="container-fluid">
+                    <div class="row align-items-center flex-column flex-md-row" style="min-height: 480px; background: linear-gradient(120deg, #fbc02d 0%, #e53935 100%);">
+                        <div class="col-md-5 text-center p-0">
+                            <img src="/images/slide3.jpg" alt="Community Slide" class="img-fluid slide-img-shadow" style="max-height:420px; object-fit:cover; margin: 1.5rem auto;" />
+                        </div>
+                        <div class="col-md-7 d-flex flex-column align-items-center justify-content-center text-dark py-4">
+                            <h1 class="fade-in">A Diverse & Global Community</h1>
+                            <p class="fade-in">Experience campus life with students from around the world and a wide range of cultural activities.</p>
+                            <div class="d-flex justify-content-center gap-3">
+                                <a href="#" class="btn btn-outline-dark btn-lg fade-in">Discover Campus Life</a>
+                                <a href="#" class="btn btn-primary btn-lg fade-in">Apply Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section class="py-5">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <i class="fas fa-graduation-cap fa-3x mb-3 text-primary"></i>
+                        <h5 class="card-title">Academic Excellence</h5>
+                        <p class="card-text">Offering world-class education with internationally recognized programs and experienced faculty.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <i class="fas fa-flask fa-3x mb-3 text-primary"></i>
+                        <h5 class="card-title">Research & Innovation</h5>
+                        <p class="card-text">Pioneering research initiatives and innovative solutions to address global challenges.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <i class="fas fa-globe fa-3x mb-3 text-primary"></i>
+                        <h5 class="card-title">Global Community</h5>
+                        <p class="card-text">A diverse international community fostering cultural exchange and global perspectives.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Colleges Section -->
+<section class="py-5 colleges-section">
+    <div class="container">
+        <h2 class="text-center mb-5">Our Colleges</h2>
+        <div class="row g-4">
+            <div class="col-md-4 col-lg-3">
+                <div class="card h-100 college-engineering-bg">
+                    <div class="card-body text-center">
+                        <i class="fas fa-cogs fa-3x mb-3 text-primary"></i>
+                        <h5 class="card-title">College of Engineering</h5>
+                        <p class="card-text">Advancing technology and innovation through engineering excellence.</p>
+                        <a asp-page="/Colleges/Engineering/Index" class="btn btn-outline-primary mt-2">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3">
+                <div class="card h-100 college-applied-bg">
+                    <div class="card-body text-center">
+                        <i class="fas fa-microscope fa-3x mb-3 text-primary"></i>
+                        <h5 class="card-title">College of Applied Sciences</h5>
+                        <p class="card-text">Bridging theory and practical applications in scientific research.</p>
+                        <a href="#" class="btn btn-outline-primary mt-2">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3">
+                <div class="card h-100 college-dentistry-bg">
+                    <div class="card-body text-center">
+                        <i class="fas fa-tooth fa-3x mb-3 text-primary"></i>
+                        <h5 class="card-title">College of Dentistry</h5>
+                        <p class="card-text">Excellence in dental education and oral healthcare.</p>
+                        <a href="#" class="btn btn-outline-primary mt-2">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3">
+                <div class="card h-100 college-pharmacy-bg">
+                    <div class="card-body text-center">
+                        <i class="fas fa-pills fa-3x mb-3 text-primary"></i>
+                        <h5 class="card-title">College of Pharmacy</h5>
+                        <p class="card-text">Advancing pharmaceutical sciences and healthcare.</p>
+                        <a href="#" class="btn btn-outline-primary mt-2">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3">
+                <div class="card h-100 college-nursing-bg">
+                    <div class="card-body text-center">
+                        <i class="fas fa-user-nurse fa-3x mb-3 text-primary"></i>
+                        <h5 class="card-title">College of Nursing</h5>
+                        <p class="card-text">Training compassionate healthcare professionals.</p>
+                        <a href="#" class="btn btn-outline-primary mt-2">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3">
+                <div class="card h-100 college-healthsci-bg">
+                    <div class="card-body text-center">
+                        <i class="fas fa-heartbeat fa-3x mb-3 text-primary"></i>
+                        <h5 class="card-title">College of Health Sciences</h5>
+                        <p class="card-text">Comprehensive education in health sciences.</p>
+                        <a href="#" class="btn btn-outline-primary mt-2">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3">
+                <div class="card h-100 college-healthtech-bg">
+                    <div class="card-body text-center">
+                        <i class="fas fa-stethoscope fa-3x mb-3 text-primary"></i>
+                        <h5 class="card-title">College of Health Technology</h5>
+                        <p class="card-text">Innovative healthcare technology education.</p>
+                        <a href="#" class="btn btn-outline-primary mt-2">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3">
+                <div class="card h-100 college-admin-bg">
+                    <div class="card-body text-center">
+                        <i class="fas fa-users fa-3x mb-3 text-primary"></i>
+                        <h5 class="card-title">College of Administration and Social Sciences</h5>
+                        <p class="card-text">Leadership and social sciences education.</p>
+                        <a href="#" class="btn btn-outline-primary mt-2">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3">
+                <div class="card h-100 college-law-bg">
+                    <div class="card-body text-center">
+                        <i class="fas fa-balance-scale fa-3x mb-3 text-primary"></i>
+                        <h5 class="card-title">College of Law and International Relations</h5>
+                        <p class="card-text">Excellence in legal studies and global affairs.</p>
+                        <a href="#" class="btn btn-outline-primary mt-2">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3">
+                <div class="card h-100 college-arts-bg">
+                    <div class="card-body text-center">
+                        <i class="fas fa-palette fa-3x mb-3 text-primary"></i>
+                        <h5 class="card-title">College of Arts</h5>
+                        <p class="card-text">Nurturing creativity and artistic expression.</p>
+                        <a href="#" class="btn btn-outline-primary mt-2">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3">
+                <div class="card h-100 college-languages-bg">
+                    <div class="card-body text-center">
+                        <i class="fas fa-language fa-3x mb-3 text-primary"></i>
+                        <h5 class="card-title">College of Languages and Translation</h5>
+                        <p class="card-text">Mastering languages and cultural communication.</p>
+                        <a href="#" class="btn btn-outline-primary mt-2">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg-3">
+                <div class="card h-100 college-physical-bg">
+                    <div class="card-body text-center">
+                        <i class="fas fa-running fa-3x mb-3 text-primary"></i>
+                        <h5 class="card-title">College of Physical Education</h5>
+                        <p class="card-text">Promoting health and physical excellence.</p>
+                        <a href="#" class="btn btn-outline-primary mt-2">Learn More</a>
+                    </div>
+                </div>
+            </div>
+           @*  <div class="col-md-4 col-lg-3">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <i class="fas fa-mosque fa-3x mb-3 text-primary"></i>
+                        <h5 class="card-title">College of Islamic Studies</h5>
+                        <p class="card-text">Deep understanding of Islamic sciences and culture.</p>
+                        <a href="#" class="btn btn-outline-primary mt-2">Learn More</a>
+                    </div>
+                </div>
+            </div> *@
+        </div>
+    </div>
+</section>
+
+<!-- Campus Life Section -->
+<section class="py-5 bg-light campus-life-section">
+    <div class="container">
+        <h2 class="text-center mb-5">Campus Life</h2>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 campus-life-card">
+                    <div class="card-body text-center">
+                        <i class="fas fa-users-cog fa-3x mb-3 text-primary"></i>
+                        <h5 class="card-title">Student Clubs</h5>
+                        <p class="card-text">Join our diverse range of student clubs and organizations. From academic societies to cultural groups, there's something for everyone to get involved in and make lasting connections.</p>
+                        <a href="#" class="btn btn-outline-primary mt-2">Explore Clubs</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 campus-life-card">
+                    <div class="card-body text-center">
+                        <i class="fas fa-dumbbell fa-3x mb-3 text-primary"></i>
+                        <h5 class="card-title">Health and Sports</h5>
+                        <p class="card-text">Stay active and healthy with our state-of-the-art sports facilities. Enjoy various sports activities, fitness programs, and wellness initiatives designed to promote a healthy lifestyle.</p>
+                        <a href="#" class="btn btn-outline-primary mt-2">View Facilities</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 campus-life-card">
+                    <div class="card-body text-center">
+                        <i class="fas fa-calendar-alt fa-3x mb-3 text-primary"></i>
+                        <h5 class="card-title">Student Activities</h5>
+                        <p class="card-text">Experience a vibrant campus life with regular events, workshops, cultural festivals, and social gatherings. Create unforgettable memories and develop new skills.</p>
+                        <a href="#" class="btn btn-outline-primary mt-2">View Calendar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 campus-life-card">
+                    <div class="card-body text-center">
+                        <i class="fas fa-home fa-3x mb-3 text-primary"></i>
+                        <h5 class="card-title">Residential Life</h5>
+                        <p class="card-text">Live in comfortable, modern accommodation with all the amenities you need. Our residential halls provide a supportive environment for academic success and personal growth.</p>
+                        <a href="#" class="btn btn-outline-primary mt-2">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 campus-life-card">
+                    <div class="card-body text-center">
+                        <i class="fas fa-utensils fa-3x mb-3 text-primary"></i>
+                        <h5 class="card-title">Restaurants and Shops</h5>
+                        <p class="card-text">Enjoy a variety of dining options and convenient shopping facilities on campus. From cafeterias to retail stores, everything you need is just a short walk away.</p>
+                        <a href="#" class="btn btn-outline-primary mt-2">View Options</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 campus-life-card">
+                    <div class="card-body text-center">
+                        <i class="fas fa-microchip fa-3x mb-3 text-primary"></i>
+                        <h5 class="card-title">New Technology</h5>
+                        <p class="card-text">Experience cutting-edge technology with our smart campus features. From digital classrooms and smart ID cards to automated facilities management and IoT-enabled services, we're building the future of education.</p>
+                        <a href="#" class="btn btn-outline-primary mt-2">Discover More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Galiawa Section -->
+<section class="py-5 galiawa-section">
+    <div class="container">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-md-3 text-center mb-4 mb-md-0">
+                <img src="~/images/galiawa-logo.png" alt="Galiawa Logo" class="galiawa-logo" style="max-width: 180px; max-height: 120px;" onerror="this.style.display='none';this.insertAdjacentHTML('afterend','<div style=\'color:#fff;font-size:1.5rem;\'>Galiawa</div>');" />
+            </div>
+            <div class="col-md-9">
+                <h2 class="galiawa-title mb-3">Galiawa Smart Campus</h2>
+                <p class="lead">Welcome to Galiawa Smart Campus, where innovation meets education. Our state-of-the-art digital infrastructure transforms the traditional campus experience into an interconnected, intelligent environment that enhances learning, research, and student life.</p>
+                <ul class="galiawa-features list-unstyled mt-4">
+                    <li><span class="galiawa-dot galiawa-red"></span> Smart Learning Spaces with Interactive Technology</li>
+                    <li><span class="galiawa-dot galiawa-yellow"></span> Digital Student Services & Campus Navigation</li>
+                    <li><span class="galiawa-dot galiawa-green"></span> Energy-Efficient Buildings & Green Initiatives</li>
+                    <li><span class="galiawa-dot galiawa-blue"></span> Connected Community & Digital Collaboration</li>
+                </ul>
+                <div class="mt-4">
+                    <a href="#" class="btn btn-outline-light">Explore Smart Features</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- News Section -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5">Latest News & Events</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card">
+                    @* <img src="~/images/news1.jpg" class="card-img-top" alt="News 1"> *@
+                    <div class="card-body text-center">
+                        <i class="fas fa-microchip fa-2x mb-2 text-primary"></i>
+                        <h5 class="card-title">International Conference on Technology</h5>
+                        <p class="card-text">Join us for our annual technology conference featuring renowned speakers and workshops.</p>
+                        <a href="#" class="btn btn-outline-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+@*                     <img src="~/images/news2.jpg" class="card-img-top" alt="News 2">
+ *@                    <div class="card-body text-center">
+                        <i class="fas fa-award fa-2x mb-2 text-warning"></i>
+                        <h5 class="card-title">New Research Grant Awarded</h5>
+                        <p class="card-text">Our faculty receives prestigious grant for groundbreaking research in renewable energy.</p>
+                        <a href="#" class="btn btn-outline-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    @* <img src="~/images/news3.jpg" class="card-img-top" alt="News 3"> *@
+                    <div class="card-body text-center">
+                        <i class="fas fa-user-graduate fa-2x mb-2 text-success"></i>
+                        <h5 class="card-title">Student Success Stories</h5>
+                        <p class="card-text">Celebrating our graduates' achievements and their contributions to society.</p>
+                        <a href="#" class="btn btn-outline-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Call to Action -->
+<section class="py-5 bg-primary text-white">
+    <div class="container text-center">
+        <h2 class="mb-4">Ready to Start Your Journey?</h2>
+        <p class="lead mb-4">Join our vibrant community of learners and innovators.</p>
+        <div class="d-flex justify-content-center gap-3">
+            <a href="#" class="btn btn-light btn-lg">Apply Now</a>
+            <a href="#" class="btn btn-outline-light btn-lg">Learn More</a>
+        </div>
+    </div>
+</section>
